@@ -1,0 +1,50 @@
+.about-name {
+  font-family: $primary-font;
+  font-size: 24px;
+  margin: 10px 0 0 0;
+}
+
+.about-description {
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.about-main-image {
+  height: 200px;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+}
+
+.about-page {
+  background: $primary-light;
+}
+
+.about-title {
+  font-family: $primary-font;
+  font-size: 18px;
+  font-weight: 100;
+  margin: 5px 0 20px 0;
+}
+
+#content {
+  background: #fff;
+  border-radius: 0 5px 5px 5px;
+  box-shadow: 0 -2px 3px -2px rgba(0, 0, 0, .5);
+  height: 220px;
+  padding: 2em;
+  position: relative;
+  z-index: 2;
+}
+
+.employee-profile {
+  background: $secondary-dark;
+  color: $white;
+}
+
+.employee-profile img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}

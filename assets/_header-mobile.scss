@@ -1,0 +1,86 @@
+#mobile-header {
+  display: flex;
+}
+
+header {
+  background: $secondary-dark;
+  height: 80px;
+  left: 0;
+  right: 0;
+  top: 0;
+  h1 {
+    color: $primary-light;
+    font-family: $primary-font;
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 0.08em;
+    line-height: 80px;
+    padding: 0 0 0 20px;
+  }
+}
+
+.hamburger-bun {
+  background: $primary-light;
+  height: 3px;
+  margin: 6px 0;
+  width: 24px;
+}
+
+.nav-button {
+  color: white;
+  cursor: pointer;
+  line-height: 80px;
+  margin: 20px 8px 20px 0;
+  padding: 5px;
+  position: absolute;
+  right: 25px;
+}
+
+.nav-dropdown {
+  background: $secondary-dark;
+  display: block;
+  float: none;
+  height: 50px;
+  left: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.nav-dropdown li {
+  display: none;
+  font-family: Helvetica;
+  width: 100%;
+}
+
+.nav-dropdown li a {
+  color: white;
+  display: block;
+  font-family: $primary-font;
+  font-size: 20px;
+  padding: 12px 5%;
+  text-decoration: none;
+  width: 90%;
+}
+
+.nav-dropdown li a:hover {
+  background: $primary-light;
+}
+
+.nav-dropdown.open {
+  height: auto;
+  margin-top: 80px;
+  z-index: 1000;
+}
+
+.nav-dropdown.open li {
+  display: block;
+}
+
+.nav-dropdown.open li a {
+  text-align: right;
+}

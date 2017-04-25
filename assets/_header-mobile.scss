@@ -8,6 +8,10 @@ header {
   left: 0;
   right: 0;
   top: 0;
+  a {
+    text-decoration: none;
+    color: $primary-light;
+  }
   h1 {
     color: $primary-light;
     font-family: $primary-font;

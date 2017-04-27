@@ -13,7 +13,7 @@ $(document).ready(function(){
 //========================================================================================================================
 
     $('.home-image-slider').slick({
-      autoplay: true,
+      autoplay: false,
       arrows: false,
       dots: true,
       infinite: true,
@@ -21,7 +21,7 @@ $(document).ready(function(){
     });
 
     $('.services-image-slider').slick({
-      autoplay: true,
+      autoplay: false,
       arrows: false,
       dots: true,
       infinite: true,

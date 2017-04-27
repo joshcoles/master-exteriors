@@ -87,40 +87,63 @@ input, select {
   vertical-align: middle; }
 
 #mobile-header {
-  display: flex; }
-
-header {
+  display: flex;
   background: #303030;
   height: 80px;
   left: 0;
   right: 0;
   top: 0; }
-  header a {
-    text-decoration: none;
-    color: #FF9900; }
-  header h1 {
-    color: #FF9900;
-    font-family: "Arvo", serif;
-    font-size: 20px;
-    font-weight: 100;
-    letter-spacing: 0.08em;
-    line-height: 80px;
-    padding: 0 0 0 20px; }
+  @media (min-width: 768px) {
+    #mobile-header {
+      height: 100px; } }
+
+#mobile-header a {
+  text-decoration: none;
+  color: #FFFFFF; }
+
+#mobile-header h1 {
+  color: #EE8F00;
+  font-family: "Arvo", serif;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 0.08em;
+  line-height: 80px;
+  padding: 0 0 0 20px; }
+  @media (min-width: 768px) {
+    #mobile-header h1 {
+      line-height: 100px;
+      padding: 0 0 0 40px; } }
+
+#mobile-header .logo a {
+  color: #EE8F00;
+  font-family: "Arvo", serif; }
+  @media (min-width: 768px) {
+    #mobile-header .logo a {
+      font-size: 30px; } }
 
 .hamburger-bun {
-  background: #FF9900;
+  background: #EE8F00;
   height: 3px;
   margin: 6px 0;
   width: 24px; }
+  @media (min-width: 768px) {
+    .hamburger-bun {
+      height: 5px;
+      margin: 8px;
+      width: 35px; } }
 
 .nav-button {
   color: white;
   cursor: pointer;
   line-height: 80px;
-  margin: 20px 8px 20px 0;
+  margin: 20px -5px 20px 0;
   padding: 5px;
   position: absolute;
   right: 25px; }
+  @media (min-width: 768px) {
+    .nav-button {
+      line-height: 100px;
+      margin: 22px 15px 22px 0; } }
 
 .nav-dropdown {
   background: #303030;
@@ -149,9 +172,13 @@ header {
   padding: 12px 5%;
   text-decoration: none;
   width: 90%; }
+  @media (min-width: 768px) {
+    .nav-dropdown li a {
+      font-size: 26px;
+      padding: 16px 5%; } }
 
 .nav-dropdown li a:hover {
-  background: #FF9900; }
+  background: #EE8F00; }
 
 .nav-dropdown.open {
   height: auto;
@@ -172,9 +199,15 @@ footer {
   left: 0;
   right: 0;
   padding: 40px 20px 40px 40px; }
-  footer p {
+  footer p, footer a {
     color: #FFFFFF;
-    font-size: 14px; }
+    font-size: 14px;
+    text-align: right;
+    text-decoration: none; }
+    @media (min-width: 768px) {
+      footer p, footer a {
+        font-size: 20px;
+        line-height: 26px; } }
 
 .contact-info {
   color: #000000;
@@ -190,26 +223,35 @@ footer {
   font-family: "Roboto", sans-Serif;
   line-height: 18px;
   padding: 0 0 20px 0; }
+  @media (min-width: 768px) {
+    .home-description {
+      font-size: 18px;
+      line-height: 22px; } }
 
 #home-detail {
-  background: #4c4c4c; }
+  background: #636363; }
   #home-detail * {
     color: white; }
 
 .home-main-image {
   object-fit: cover;
   width: 100%;
-  height: 200px; }
+  height: 300px; }
 
 .home-tagline {
   font-family: "Arvo", serif;
-  font-size: 20px;
-  padding: 14px 0 14px 0;
-  text-align: center;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2); }
+  font-size: 26px;
+  padding: 0 0 15px 0;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .home-tagline {
+      font-size: 34px; } }
 
 #home-slider {
   height: 200px; }
+  @media (min-width: 768px) {
+    #home-slider {
+      height: 300px; } }
 
 .slick-dots li button:before {
   font-size: 12px !important;
@@ -223,6 +265,9 @@ footer {
   width: 100%;
   height: 200px;
   object-fit: cover; }
+  @media (min-width: 768px) {
+    .slider-image {
+      height: 300px; } }
 
 .test-slider > img {
   width: 200px;
@@ -232,29 +277,61 @@ ul.slick-dots {
   margin-bottom: 40px; }
 
 .about-name {
+  color: #EE8F00;
   font-family: "Arvo", serif;
   font-size: 24px;
+  letter-spacing: 0.1rem;
   margin: 10px 0 0 0; }
+  @media (min-width: 768px) {
+    .about-name {
+      font-size: 40px; } }
 
 .about-description {
   font-family: "Roboto", sans-Serif;
   font-size: 14px;
-  line-height: 16px; }
+  line-height: 18px; }
+  @media (min-width: 768px) {
+    .about-description {
+      font-size: 20px;
+      line-height: 26px;
+      position: absolute;
+      right: 30px;
+      top: 135px;
+      width: 45%; } }
+
+@media (min-width: 768px) {
+  .about-description.history-description {
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 100%; } }
 
 .about-main-image {
   height: 200px;
   object-fit: cover;
   overflow: hidden;
   width: 100%; }
-
-.about-page {
-  background: #FFFFFF; }
+  @media (min-width: 768px) {
+    .about-main-image {
+      height: 300px; } }
 
 .about-title {
   font-family: "Arvo", serif;
   font-size: 18px;
   font-weight: 100;
   margin: 5px 0 20px 0; }
+  @media (min-width: 768px) {
+    .about-title {
+      font-size: 24px; } }
+
+.about-title.history-title {
+  color: orange;
+  font-size: 20px;
+  margin: 10px 0; }
+  @media (min-width: 768px) {
+    .about-title.history-title {
+      font-size: 28px;
+      margin: 20px 0; } }
 
 #content {
   background: #fff;
@@ -265,26 +342,49 @@ ul.slick-dots {
   position: relative;
   z-index: 2; }
 
-.employee-profile {
-  background: #303030;
-  color: #FFFFFF; }
-
 .employee-profile img {
   height: 200px;
+  margin-bottom: 20px;
   object-fit: cover;
   width: 100%; }
+  @media (min-width: 768px) {
+    .employee-profile img {
+      height: 300px;
+      width: 45%; } }
+
+section.about-page {
+  background: #FFFFFF;
+  padding-top: 20px; }
+
+section.employee-profile {
+  background: #303030;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  padding-top: 10px; }
+  @media (min-width: 768px) {
+    section.employee-profile {
+      position: relative; } }
+
+@media (min-width: 768px) {
+  section#tab-about {
+    position: relative; } }
 
 .services-description {
   font-family: "Roboto", sans-Serif;
   font-size: 14px;
   line-height: 18px;
   margin: 10px 0; }
+  @media (min-width: 768px) {
+    .services-description {
+      font-size: 16px;
+      line-height: 20px; } }
 
 .services-list {
   color: white;
-  font-family: "Roboto", sans-Serif;
+  font-family: "Arvo", serif;
   letter-spacing: 0.1rem;
-  margin-left: 25px; }
+  line-height: 22px;
+  margin: 0 0 10px 25px; }
 
 .services-main-image {
   height: 200px;
@@ -294,6 +394,9 @@ ul.slick-dots {
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777; }
+  @media (min-width: 768px) {
+    .services-main-image {
+      height: 300px; } }
 
 .services-other {
   font-family: "Arvo", serif;
@@ -301,40 +404,65 @@ ul.slick-dots {
   font-weight: 100;
   margin: 10px 0 5px 0;
   padding-left: 5px; }
+  @media (min-width: 768px) {
+    .services-other {
+      font-size: 22px; } }
 
 .services-other-div {
-  background: #FF9900;
+  background: #EE8F00;
   margin-top: 20px;
   padding: 5px;
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777; }
+  @media (min-width: 768px) {
+    .services-other-div {
+      padding: 10px; } }
 
 .services-section {
   padding: 15px 15px 30px 15px; }
+  @media (min-width: 768px) {
+    .services-section {
+      margin-top: -40px;
+      padding: 40px 30px; } }
 
 .services-tagline {
   font-family: "Arvo", serif;
   font-size: 18px;
   font-weight: 100;
   margin: 5px 0 10px 0; }
+  @media (min-width: 768px) {
+    .services-tagline {
+      font-size: 22px;
+      margin: 10px 0 10px 0; } }
 
 .services-title {
   font-family: "Arvo", serif;
   font-size: 24px;
   margin: 10px 0 5px 0;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2); }
+  @media (min-width: 768px) {
+    .services-title {
+      font-size: 36px; } }
 
 .services-tabs-section {
-  margin: -20px 0 0 0;
+  margin: -30px 0 0 0;
   padding: 0; }
+  @media (min-width: 768px) {
+    .services-tabs-section {
+      margin-top: -30px;
+      padding: 10px 10; } }
 
 #tabs {
   list-style: none;
-  margin: 0 0 10px 0;
   overflow: hidden;
-  padding: 0;
+  padding: 0 0 15px 0;
   width: 100%; }
+  @media (min-width: 768px) {
+    #tabs {
+      margin: -40px auto 10px auto;
+      padding: 25px 10px 10px 10px;
+      width: 90%; } }
 
 #tabs li {
   float: left;
@@ -352,6 +480,9 @@ ul.slick-dots {
   text-align: center;
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   width: 74%; }
+  @media (min-width: 768px) {
+    #tabs a {
+      padding: 1em 1.8em; } }
 
 #tabs a:hover,
 #tabs a:focus {
@@ -361,18 +492,21 @@ ul.slick-dots {
   outline: 0; }
 
 #tabs #current a {
-  background: #4c4c4c;
+  background: #636363;
   z-index: 3; }
 
 .tab-text {
   font-family: "Arvo", serif;
   font-size: 16px; }
+  @media (min-width: 768px) {
+    .tab-text {
+      font-size: 22px; } }
 
 #tab-about {
   background: #303030;
   color: #FFFFFF; }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   #tabs #current a::after {
     background: #303030;
     border-top-left-radius: 20px;
@@ -395,13 +529,16 @@ ul.slick-dots {
   #tabs a:focus::after {
     background: #303030; } }
 .contact-us {
-  background: #FF9900;
+  background: #EE8F00;
   color: white;
   padding: 10px;
   text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777; }
+  @media (min-width: 768px) {
+    .contact-us {
+      padding: 20px; } }
   .contact-us button {
     background: #303030;
     border: none;
@@ -409,10 +546,17 @@ ul.slick-dots {
     font-family: "Arvo", serif;
     margin: 10px 0;
     padding: 10px; }
+    @media (min-width: 768px) {
+      .contact-us button {
+        font-size: 20px;
+        padding: 15px; } }
   .contact-us h1 {
     font-family: "Arvo", serif;
     font-size: 24px;
     margin-bottom: 10px; }
+    @media (min-width: 768px) {
+      .contact-us h1 {
+        font-size: 30px; } }
   .contact-us input {
     font-size: 16px;
     margin: 5px 0 20px 0;
@@ -421,13 +565,20 @@ ul.slick-dots {
     font-family: "Arvo", serif;
     margin: 10px 0;
     width: 100%; }
+    @media (min-width: 768px) {
+      .contact-us label {
+        font-size: 20px; } }
   .contact-us textarea {
     font-size: 16px;
-    height: 80px;
+    height: 100px;
     margin-top: 5px;
     width: 99%; }
+    @media (min-width: 768px) {
+      .contact-us textarea {
+        height: 120px; } }
 
 body, html {
+  background: #303030;
   height: 100%;
   margin: 0;
   padding: 0; }
@@ -435,6 +586,9 @@ body, html {
 section {
   background: white;
   padding: 30px 15px; }
+  @media (min-width: 768px) {
+    section {
+      padding: 40px 30px; } }
 
 .first-section {
   padding: 0; }

@@ -1,9 +1,14 @@
 #tabs {
   list-style: none;
-  margin: 0 0 10px 0;
   overflow: hidden;
-  padding: 0;
+  padding: 0 0 15px 0;
   width: 100%;
+  @media(min-width:768px){
+    // margin: 0 auto -20px auto;
+    margin: -40px auto 10px auto;
+    padding: 25px 10px 10px 10px;
+    width: 90%;
+  }
 }
 
 #tabs li {
@@ -23,6 +28,9 @@
   text-align: center;
   text-shadow: 0 1px 0 rgba(255,255,255,.8);
   width: 74%;
+  @media(min-width:768px){
+    padding: 1em 1.8em;
+  }
 }
 
 #tabs a:hover,
@@ -41,7 +49,10 @@
 
 .tab-text {
   font-family: $primary-font;
-  font-size: 16px
+  font-size: 16px;
+  @media(min-width:768px){
+    font-size: 22px;
+  }
 }
 
 #tab-about {
@@ -49,7 +60,7 @@
   color: $white;
 }
 
-@media(min-width:768px){
+@media(min-width:1024px){
 
   //==================================================================================
   // Tab structure changes on tablet. :after pseudo elements don't exist on mobile.

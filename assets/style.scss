@@ -9,6 +9,7 @@
 @import 'contact';
 
 body, html {
+  background: $secondary-dark;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -17,6 +18,9 @@ body, html {
 section {
   background: white;
   padding: 30px 15px;
+  @media(min-width:768px){
+    padding: 40px 30px;
+  }
 }
 
 .first-section {

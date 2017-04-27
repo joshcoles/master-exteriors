@@ -1,25 +1,39 @@
 #mobile-header {
   display: flex;
-}
-
-header {
   background: $secondary-dark;
   height: 80px;
   left: 0;
   right: 0;
   top: 0;
-  a {
-    text-decoration: none;
-    color: $primary-light;
+  @media(min-width:768px){
+    height: 100px;
   }
-  h1 {
-    color: $primary-light;
-    font-family: $primary-font;
-    font-size: 20px;
-    font-weight: 100;
-    letter-spacing: 0.08em;
-    line-height: 80px;
-    padding: 0 0 0 20px;
+}
+
+#mobile-header a {
+  text-decoration: none;
+  color: $white;
+}
+
+#mobile-header h1 {
+  color: $primary-light;
+  font-family: $primary-font;
+  font-size: 20px;
+  font-weight: 100;
+  letter-spacing: 0.08em;
+  line-height: 80px;
+  padding: 0 0 0 20px;
+  @media(min-width:768px){
+    line-height: 100px;
+    padding: 0 0 0 40px;
+  }
+}
+
+#mobile-header .logo a {
+  color: $primary-light;
+  font-family: $primary-font;
+  @media(min-width:768px){
+    font-size: 30px;
   }
 }
 
@@ -28,16 +42,25 @@ header {
   height: 3px;
   margin: 6px 0;
   width: 24px;
+  @media(min-width:768px){
+    height: 5px;
+    margin: 8px;
+    width: 35px;
+  }
 }
 
 .nav-button {
   color: white;
   cursor: pointer;
   line-height: 80px;
-  margin: 20px 8px 20px 0;
+  margin: 20px -5px 20px 0;
   padding: 5px;
   position: absolute;
   right: 25px;
+  @media(min-width:768px){
+    line-height: 100px;
+    margin: 22px 15px 22px 0;
+  }
 }
 
 .nav-dropdown {
@@ -69,6 +92,10 @@ header {
   padding: 12px 5%;
   text-decoration: none;
   width: 90%;
+  @media(min-width:768px){
+    font-size: 26px;
+    padding: 16px 5%;
+  }
 }
 
 .nav-dropdown li a:hover {

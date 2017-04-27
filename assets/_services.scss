@@ -3,13 +3,21 @@
   font-size: 14px;
   line-height: 18px;
   margin: 10px 0;
+  @media(min-width:768px){
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .services-list {
   color: white;
-  font-family: $secondary-font;
+  font-family: $primary-font;
   letter-spacing: 0.1rem;
-  margin-left: 25px;
+  line-height: 22px;
+  margin: 0 0 10px 25px;
+  @media(min-width:768px){
+
+  }
 }
 
 .services-main-image {
@@ -20,6 +28,9 @@
   -webkit-box-shadow: 0 10px 6px -6px #777;
      -moz-box-shadow: 0 10px 6px -6px #777;
           box-shadow: 0 10px 6px -6px #777;
+  @media(min-width:768px){
+    height: 300px;
+  }
 }
 
 .services-other {
@@ -28,6 +39,9 @@
   font-weight: 100;
   margin: 10px 0 5px 0;
   padding-left: 5px;
+  @media(min-width:768px){
+    font-size: 22px;
+  }
 }
 
 .services-other-div {
@@ -37,10 +51,17 @@
   -webkit-box-shadow: 0 10px 6px -6px #777;
      -moz-box-shadow: 0 10px 6px -6px #777;
           box-shadow: 0 10px 6px -6px #777;
+  @media(min-width:768px){
+    padding: 10px;
+  }
 }
 
 .services-section {
   padding: 15px 15px 30px 15px;
+  @media(min-width:768px){
+    margin-top: -40px;
+    padding: 40px 30px;
+  }
 }
 
 .services-tagline {
@@ -48,6 +69,10 @@
   font-size: 18px;
   font-weight: 100;
   margin: 5px 0 10px 0;
+  @media(min-width:768px){
+    font-size: 22px;
+    margin: 10px 0 10px 0;
+  }
 }
 
 .services-title {
@@ -55,9 +80,16 @@
   font-size: 24px;
   margin: 10px 0 5px 0;
   text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
+  @media(min-width:768px){
+    font-size: 36px;
+  }
 }
 
 .services-tabs-section {
-  margin: -20px 0 0 0;
+  margin: -30px 0 0 0;
   padding: 0;
+  @media(min-width:768px){
+    margin-top: -30px;
+    padding: 10px 10;
+  }
 }

@@ -25,9 +25,6 @@
   object-fit: cover;
   overflow: hidden;
   width: 100%;
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-     -moz-box-shadow: 0 10px 6px -6px #777;
-          box-shadow: 0 10px 6px -6px #777;
   @media(min-width:768px){
     height: 300px;
   }
@@ -66,9 +63,9 @@
 
 .services-tagline {
   font-family: $primary-font;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
-  margin: 5px 0 10px 0;
+  margin: 10px 0 10px 0;
   @media(min-width:768px){
     font-size: 22px;
     margin: 10px 0 10px 0;
@@ -79,15 +76,14 @@
   font-family: $primary-font;
   font-size: 24px;
   margin: 10px 0 5px 0;
-  text-shadow: 2px 2px 0px rgba(0,0,0,0.2);
   @media(min-width:768px){
     font-size: 36px;
   }
 }
 
 .services-tabs-section {
-  margin: -30px 0 0 0;
-  padding: 0;
+  margin: 0;
+  padding: 0 10px;
   @media(min-width:768px){
     margin-top: -30px;
     padding: 10px 10;

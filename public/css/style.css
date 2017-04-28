@@ -108,7 +108,7 @@ input, select {
   font-weight: 100;
   letter-spacing: 0.08em;
   line-height: 80px;
-  padding: 0 0 0 20px; }
+  padding: 0 0 0 15px; }
   @media (min-width: 768px) {
     #mobile-header h1 {
       line-height: 100px;
@@ -136,8 +136,8 @@ input, select {
   color: white;
   cursor: pointer;
   line-height: 80px;
-  margin: 20px -5px 20px 0;
-  padding: 5px;
+  margin: 20px -10px 20px 0;
+  padding: 5px 0 5px 5px;
   position: absolute;
   right: 25px; }
   @media (min-width: 768px) {
@@ -195,14 +195,14 @@ footer {
   background: #303030;
   bottom: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-start;
   left: 0;
   right: 0;
   padding: 40px 20px 40px 40px; }
   footer p, footer a {
     color: #FFFFFF;
     font-size: 14px;
-    text-align: right;
+    text-align: left;
     text-decoration: none; }
     @media (min-width: 768px) {
       footer p, footer a {
@@ -219,10 +219,12 @@ footer {
   background: #FFFFFF; }
 
 .home-description {
+  color: #303030;
   font-size: 16px;
   font-family: "Roboto", sans-Serif;
   line-height: 18px;
-  padding: 0 0 20px 0; }
+  padding: 0 0 20px 0;
+  text-align: center; }
   @media (min-width: 768px) {
     .home-description {
       font-size: 18px;
@@ -234,9 +236,12 @@ footer {
     color: white; }
 
 .home-main-image {
+  height: 200px;
   object-fit: cover;
-  width: 100%;
-  height: 300px; }
+  width: 100%; }
+  @media (min-width: 768px) {
+    .home-main-image {
+      height: 300px; } }
 
 .home-tagline {
   font-family: "Arvo", serif;
@@ -315,9 +320,14 @@ ul.slick-dots {
     .about-main-image {
       height: 300px; } }
 
+#tabs.about-page-tabs {
+  padding-bottom: 20px;
+  margin-top: -20px; }
+
 .about-title {
   font-family: "Arvo", serif;
-  font-size: 18px;
+  font-size: 16px;
+  font-style: italic;
   font-weight: 100;
   margin: 5px 0 20px 0; }
   @media (min-width: 768px) {
@@ -353,8 +363,7 @@ ul.slick-dots {
       width: 45%; } }
 
 section.about-page {
-  background: #FFFFFF;
-  padding-top: 20px; }
+  background: #FFFFFF; }
 
 section.employee-profile {
   background: #303030;
@@ -390,10 +399,7 @@ section.employee-profile {
   height: 200px;
   object-fit: cover;
   overflow: hidden;
-  width: 100%;
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
-  box-shadow: 0 10px 6px -6px #777; }
+  width: 100%; }
   @media (min-width: 768px) {
     .services-main-image {
       height: 300px; } }
@@ -428,9 +434,9 @@ section.employee-profile {
 
 .services-tagline {
   font-family: "Arvo", serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 100;
-  margin: 5px 0 10px 0; }
+  margin: 10px 0 10px 0; }
   @media (min-width: 768px) {
     .services-tagline {
       font-size: 22px;
@@ -439,15 +445,14 @@ section.employee-profile {
 .services-title {
   font-family: "Arvo", serif;
   font-size: 24px;
-  margin: 10px 0 5px 0;
-  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2); }
+  margin: 10px 0 5px 0; }
   @media (min-width: 768px) {
     .services-title {
       font-size: 36px; } }
 
 .services-tabs-section {
-  margin: -30px 0 0 0;
-  padding: 0; }
+  margin: 0;
+  padding: 0 10px; }
   @media (min-width: 768px) {
     .services-tabs-section {
       margin-top: -30px;
@@ -456,11 +461,11 @@ section.employee-profile {
 #tabs {
   list-style: none;
   overflow: hidden;
-  padding: 0 0 15px 0;
+  padding: 10px 0 0 0;
   width: 100%; }
   @media (min-width: 768px) {
     #tabs {
-      margin: -40px auto 10px auto;
+      margin: 30px auto 10px auto;
       padding: 25px 10px 10px 10px;
       width: 90%; } }
 
@@ -470,6 +475,7 @@ section.employee-profile {
 
 #tabs a {
   background: #303030;
+  border-radius: 5px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
   color: #FFFFFF;
   float: left;
@@ -482,7 +488,10 @@ section.employee-profile {
   width: 74%; }
   @media (min-width: 768px) {
     #tabs a {
-      padding: 1em 1.8em; } }
+      padding: 1em 1.8em;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      width: 72%; } }
 
 #tabs a:hover,
 #tabs a:focus {
@@ -544,8 +553,10 @@ section.employee-profile {
     border: none;
     color: white;
     font-family: "Arvo", serif;
-    margin: 10px 0;
-    padding: 10px; }
+    font-size: 14px;
+    margin: 15px 0 10px 0;
+    padding: 10px;
+    width: 100%; }
     @media (min-width: 768px) {
       .contact-us button {
         font-size: 20px;

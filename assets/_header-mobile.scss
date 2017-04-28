@@ -22,7 +22,7 @@
   font-weight: 100;
   letter-spacing: 0.08em;
   line-height: 80px;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 15px;
   @media(min-width:768px){
     line-height: 100px;
     padding: 0 0 0 40px;
@@ -53,8 +53,8 @@
   color: white;
   cursor: pointer;
   line-height: 80px;
-  margin: 20px -5px 20px 0;
-  padding: 5px;
+  margin: 20px -10px 20px 0;
+  padding: 5px 0 5px 5px;
   position: absolute;
   right: 25px;
   @media(min-width:768px){

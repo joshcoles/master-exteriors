@@ -42,9 +42,15 @@
   }
 }
 
+#tabs.about-page-tabs {
+  padding-bottom: 20px;
+  margin-top: -20px;
+}
+
 .about-title {
   font-family: $primary-font;
-  font-size: 18px;
+  font-size: 16px;
+  font-style: italic;
   font-weight: 100;
   margin: 5px 0 20px 0;
   @media(min-width:768px){
@@ -85,7 +91,7 @@
 
 section.about-page {
   background: $white;
-  padding-top: 20px;
+  // padding-top: 20px;
 }
 
 section.employee-profile {

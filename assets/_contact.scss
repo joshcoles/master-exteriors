@@ -15,8 +15,10 @@
     border: none;
     color: white;
     font-family: $primary-font;
-    margin: 10px 0;
+    font-size: 14px;
+    margin: 15px 0 10px 0;
     padding: 10px;
+    width: 100%;
     @media(min-width:768px){
       font-size: 20px;
       padding: 15px;

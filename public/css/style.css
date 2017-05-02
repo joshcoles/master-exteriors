@@ -758,7 +758,8 @@ section.employee-profile {
   .contact-us input {
     font-size: 16px;
     margin: 5px 0 20px 0;
-    width: 98%; }
+    width: 98%;
+    -webkit-appearance: none; }
   .contact-us label {
     font-family: "Arvo", serif;
     margin: 10px 0;

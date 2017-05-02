@@ -13,20 +13,12 @@ $(document).ready(function(){
 //========================================================================================================================
 
     $('.home-image-slider').slick({
-      autoplay: false,
+      autoplay: true,
       arrows: false,
       dots: true,
       infinite: true,
       mobileFirst: true
     });
-
-    $('.services-image-slider').slick({
-      autoplay: false,
-      arrows: false,
-      dots: true,
-      infinite: true,
-      mobileFirst: true
-    })
 
 //========================================================================================================================
 // Tab section logic

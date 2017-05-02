@@ -16,7 +16,8 @@
   line-height: 22px;
   margin: 0 0 10px 25px;
   @media(min-width:768px){
-
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -37,7 +38,7 @@
   margin: 10px 0 5px 0;
   padding-left: 5px;
   @media(min-width:768px){
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
@@ -56,8 +57,11 @@
 .services-section {
   padding: 15px 15px 30px 15px;
   @media(min-width:768px){
-    margin-top: -40px;
+    margin-top: -30px;
     padding: 40px 30px;
+  }
+  @media(min-width:1024px){
+    padding: 40px 50px;
   }
 }
 
@@ -65,10 +69,14 @@
   font-family: $primary-font;
   font-size: 16px;
   font-weight: 100;
+  line-height: 18px;
   margin: 10px 0 10px 0;
   @media(min-width:768px){
     font-size: 22px;
     margin: 10px 0 10px 0;
+  }
+  @media(min-width:1024px){
+    margin: 10px 0 30px 0;
   }
 }
 
@@ -78,12 +86,38 @@
   margin: 10px 0 5px 0;
   @media(min-width:768px){
     font-size: 36px;
+    margin: 10px 0 20px 0;
   }
 }
 
 .services-tabs-section {
   margin: 0;
   padding: 0 10px;
+  ul#tabs li {
+    margin: 5px 0;
+    width: 140px;
+    @media(min-width:768px){
+      width: 315px;
+      @media(min-width:1024px){
+        width: 200px;
+      }
+    }
+    a {
+      width: 140px;
+      @media(min-width:768px){
+        width: 315px;
+      }
+      @media(min-width:1024px){
+        width: 200px;
+      }
+    }
+  }
+  #tabs{
+    @media(min-width: 768px){
+      margin: 30px auto 0px auto;
+      padding: 0;
+    }
+  }
   @media(min-width:768px){
     margin-top: -30px;
     padding: 10px 10;

@@ -1,5 +1,16 @@
 #home-experience {
   background: $white;
+  @media(min-width:1024px){
+    display: flex;
+    justify-content: space-between;
+    .home-text-container {
+      padding: 20px;
+      width: 60%;
+    }
+    img {
+      width: 38%;
+    }
+  }
 }
 
 .home-description {
@@ -20,6 +31,33 @@
   * {
     color: white;
   }
+  @media(min-width:1024px){
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    .home-text-container {
+      padding: 20px;
+      width: 60%;
+    }
+    img {
+      width: 38%;
+    }
+  }
+}
+
+#home-quality {
+  background: $white;
+  @media(min-width:1024px){
+    display: flex;
+    justify-content: space-between;
+    .home-text-container {
+      padding: 20px;
+      width: 60%;
+    }
+    img {
+      width: 38%;
+    }
+  }
 }
 
 .home-main-image {
@@ -39,6 +77,9 @@
   @media(min-width:768px){
     font-size: 34px;
   }
+  @media(min-width:1024px){
+    font-size: 42px;
+  }
 }
 
 #home-slider {
@@ -46,16 +87,58 @@
   @media(min-width:768px){
     height: 300px;
   }
+  @media(min-width:1024px){
+    height: 400px;
+  }
+}
+
+.home-slider-overlay {
+  display: none;
+  @media(min-width:768px){
+    background: rgba(238, 143, 0, 0.8);
+    display: block;
+    height: auto;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    top: 250px;
+    width: 200px;
+    z-index: 5;
+  }
+  @media(min-width:1024px){
+    top: 300px;
+    width: 250px;
+  }
+}
+
+.home-slider-overlay-text {
+  @media(min-width:768px){
+    color: white;
+    font-family: $secondary-font;
+    font-size: 14px;
+    letter-spacing: 1.04px;
+    line-height: 20px;
+    opacity: 1;
+  }
+  @media(min-width:1024px){
+    font-size: 16px;
+  }
 }
 
 .slick-dots li button:before {
   font-size: 12px !important;
   color: white !important;
+  @media(min-width:1024px){
+    font-size: 16px !important;
+  }
 }
 
 .slick-dots li.slick-active button:before {
   font-size: 12px !important;
   color: white !important;
+  @media(min-width:1024px){
+    font-size: 16px !important;
+  }
 }
 
 .slider-image {
@@ -65,11 +148,9 @@
   @media(min-width:768px){
     height: 300px;
   }
-}
-
-.test-slider > img {
-  width: 200px;
-  height: auto;
+  @media(min-width:1024px){
+    height: 400px;
+  }
 }
 
 ul.slick-dots {

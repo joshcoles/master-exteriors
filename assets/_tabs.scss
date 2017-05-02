@@ -1,5 +1,9 @@
 #tabs {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  justify-content: space-around;
   overflow: hidden;
   padding: 10px 0 0 0;
   width: 100%;
@@ -8,31 +12,49 @@
     padding: 25px 10px 10px 10px;
     width: 90%;
   }
+  @media(min-width:1024px){
+    justify-content: space-between;
+  }
 }
 
 #tabs li {
-  float: left;
-  width: 50%;
+  width: 125px;
+  @media(min-width:768px){
+    width: 300px;
+  }
+  @media(min-width:1024px){
+    width: 400px;
+    &:hover {
+      a {
+        background: $secondary-dark-hover;
+      }
+    }
+  }
 }
 
 #tabs a {
   background: $secondary-dark;
-  border-radius: 5px;
+  border-radius: 3px;
   box-shadow: 0 2px 2px rgba(0,0,0,.4);
   color: $white;
   float: left;
-  margin: 5px;
-  padding: 1em 1em;
+  padding: 1em 0;
   position: relative;
   text-decoration: none;
   text-align: center;
-  text-shadow: 0 1px 0 rgba(255,255,255,.8);
-  width: 74%;
+  white-space: nowrap;
+  width: 125px;
   @media(min-width:768px){
-    padding: 1em 1.8em;
+    padding: 1em 0;
     margin-top: 10px;
     margin-bottom: 5px;
-    width: 72%;
+    width: 300px;
+  }
+  @media(min-width:1024px){
+    width: 400px;
+    &:hover {
+      background: $secondary-dark-hover;
+    }
   }
 }
 
@@ -47,7 +69,9 @@
 
 #tabs #current a {
   background: $secondary-light;
-  z-index: 3;
+  &:hover {
+    background: $secondary-light-hover;
+  }
 }
 
 .tab-text {
@@ -56,41 +80,14 @@
   @media(min-width:768px){
     font-size: 22px;
   }
+  @media(min-width:1024px){
+    &:hover{
+      background: red;
+    }
+  }
 }
 
 #tab-about {
   background: $secondary-dark;
   color: $white;
-}
-
-@media(min-width:1024px){
-
-  //==================================================================================
-  // Tab structure changes on tablet. :after pseudo elements don't exist on mobile.
-  //==================================================================================
-
-  #tabs #current a::after {
-    background: $secondary-dark;
-    border-top-left-radius: 20px;
-    z-index: 3;
-  }
-
-  #tabs a::after {
-    background: $secondary-dark;
-    border-radius: 0 5px 0 0;
-    bottom: 0;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.4);
-    content:'';
-    position:absolute;
-    right: -0.5em;
-    top: 0;
-    transform: skew(10deg);
-    width: 1em;
-    z-index: 1;
-  }
-
-  #tabs a:hover::after,
-  #tabs a:focus::after {
-    background: $secondary-dark;
-  }
 }

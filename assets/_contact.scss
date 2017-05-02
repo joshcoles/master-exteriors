@@ -1,3 +1,10 @@
+section#contact-us-section {
+  @media(min-width:1024px){
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
 .contact-us {
   background: $primary-light;
   color: white;
@@ -6,14 +13,35 @@
   -webkit-box-shadow: 0 10px 6px -6px #777;
      -moz-box-shadow: 0 10px 6px -6px #777;
           box-shadow: 0 10px 6px -6px #777;
+  ::-webkit-input-placeholder {
+    color: $secondary-light;
+    opacity: 0.4;
+  }
+  :-moz-placeholder {
+    color: $secondary-light;
+    opacity: 0.4;
+  }
+  ::-moz-placeholder {
+    color: $secondary-light;
+    opacity: 0.4;
+  }
+  :-ms-input-placeholder {
+   color: $secondary-light;
+   opacity: 0.4;
+  }
   @media(min-width:768px){
     padding: 20px;
+  }
+  @media(min-width:1024px){
+    right: 0;
+    width: 60%;
   }
 
   button {
     background: $secondary-dark;
     border: none;
     color: white;
+    cursor: pointer;
     font-family: $primary-font;
     font-size: 14px;
     margin: 15px 0 10px 0;
@@ -22,6 +50,12 @@
     @media(min-width:768px){
       font-size: 20px;
       padding: 15px;
+    }
+    @media(min-width:1024px){
+      width: 20%;
+      &:hover{
+        background: $secondary-dark-hover;
+      }
     }
   }
 
@@ -59,3 +93,34 @@
     }
   }
 }
+
+.contact-us-instructions {
+  h1 {
+    font-size: 20px;
+    margin-top: 20px;
+    @media(min-width:1024px){
+      font-size: 30px;
+    }
+  }
+  p {
+    font-size: 14px;
+    font-family: $secondary-font;
+    margin: 10px 0 0 0;
+    text-align: left;
+    @media(min-width:1024px){
+      font-size: 16px;
+    }
+  }
+  @media(min-width:1024px){
+    padding: 0 10px 0 0;
+    width: 35%;
+  }
+}
+
+
+
+
+
+
+
+

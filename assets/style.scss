@@ -21,6 +21,16 @@ section {
   @media(min-width:768px){
     padding: 40px 30px;
   }
+  @media(min-width:1024px){
+    padding: 50px 50px;
+  }
+}
+
+hr {
+  margin: 0 0 20px 0;
+  @media(min-width:768px){
+    margin: 0 0 40px 0;
+  }
 }
 
 .first-section {

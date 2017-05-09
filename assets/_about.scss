@@ -113,17 +113,28 @@ section.employee-profile {
   color: $white;
   margin-bottom: 20px;
   padding-top: 10px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
   @media(min-width:768px){
     position: relative;
   }
   @media(min-width:1024px){
-    margin: 0 auto 40px auto;
+    margin: 0 auto 30px auto;
     max-width: 1000px;
+    padding-top: 20px;
   }
 }
 
 section#tab-about {
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+     -moz-box-shadow: 0 10px 6px -6px #777;
+          box-shadow: 0 10px 6px -6px #777;
   @media(min-width:768px){
     position: relative;
+  }
+  @media(min-width:1024px){
+    margin: 0 auto;
+    max-width: 1000px;
   }
 }

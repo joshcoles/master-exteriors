@@ -259,12 +259,18 @@ footer {
   @media (min-width: 1024px) {
     #home-experience {
       display: flex;
-      justify-content: space-between; }
+      justify-content: center; }
       #home-experience .home-text-container {
         padding: 20px;
         width: 60%; }
       #home-experience img {
         width: 38%; } }
+
+@media (min-width: 1024px) {
+  #home-experience-content-container {
+    align-items: center;
+    display: flex;
+    max-width: 1000px; } }
 
 .home-description {
   color: #303030;
@@ -285,25 +291,37 @@ footer {
   @media (min-width: 1024px) {
     #home-detail {
       display: flex;
-      flex-direction: row-reverse;
-      justify-content: space-between; }
+      justify-content: center; }
       #home-detail .home-text-container {
         padding: 20px;
         width: 60%; }
       #home-detail img {
         width: 38%; } }
 
+@media (min-width: 1024px) {
+  #home-detail-content-container {
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1000px; } }
+
 #home-quality {
   background: #FFFFFF; }
   @media (min-width: 1024px) {
     #home-quality {
       display: flex;
-      justify-content: space-between; }
+      justify-content: center; }
       #home-quality .home-text-container {
         padding: 20px;
         width: 60%; }
       #home-quality img {
         width: 38%; } }
+
+@media (min-width: 1024px) {
+  #home-quality-content-container {
+    align-items: center;
+    display: flex;
+    max-width: 1000px; } }
 
 .home-main-image {
   height: 200px;
@@ -408,7 +426,7 @@ ul.slick-dots {
   line-height: 18px; }
   @media (min-width: 768px) {
     .about-description {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 26px;
       position: absolute;
       right: 30px;
@@ -443,7 +461,8 @@ ul.slick-dots {
       margin-top: -30px; } }
   @media (min-width: 1024px) {
     #tabs.about-page-tabs {
-      justify-content: space-between; } }
+      justify-content: space-between;
+      max-width: 900px; } }
 
 .about-title {
   font-family: "Arvo", serif;
@@ -484,7 +503,6 @@ ul.slick-dots {
       width: 45%; } }
   @media (min-width: 1024px) {
     .employee-profile img {
-      height: 250px;
       width: 30%; } }
 
 section.about-page {
@@ -499,6 +517,10 @@ section.employee-profile {
   @media (min-width: 768px) {
     section.employee-profile {
       position: relative; } }
+  @media (min-width: 1024px) {
+    section.employee-profile {
+      margin: 0 auto 40px auto;
+      max-width: 1000px; } }
 
 @media (min-width: 768px) {
   section#tab-about {
@@ -532,7 +554,8 @@ section.employee-profile {
   width: 100%; }
   @media (min-width: 768px) {
     .services-main-image {
-      height: 300px; } }
+      height: 350px;
+      margin: 0 0 20px 0; } }
 
 .services-other {
   font-family: "Arvo", serif;
@@ -563,11 +586,17 @@ section.employee-profile {
       padding: 40px 30px; } }
   @media (min-width: 1024px) {
     .services-section {
+      display: flex;
+      justify-content: center;
       padding: 40px 50px; } }
+  @media (min-width: 1024px) {
+    .services-section #tabbed-content {
+      max-width: 1000px; } }
 
 .services-tagline {
   font-family: "Arvo", serif;
   font-size: 16px;
+  font-style: italic;
   font-weight: 100;
   line-height: 18px;
   margin: 10px 0 10px 0; }
@@ -577,7 +606,7 @@ section.employee-profile {
       margin: 10px 0 10px 0; } }
   @media (min-width: 1024px) {
     .services-tagline {
-      margin: 10px 0 30px 0; } }
+      margin: 10px 0 20px 0; } }
 
 .services-title {
   font-family: "Arvo", serif;
@@ -613,6 +642,9 @@ section.employee-profile {
     .services-tabs-section #tabs {
       margin: 30px auto 0px auto;
       padding: 0; } }
+  @media (min-width: 1024px) {
+    .services-tabs-section #tabs {
+      max-width: 1000px; } }
   @media (min-width: 768px) {
     .services-tabs-section {
       margin-top: -30px;
@@ -637,7 +669,7 @@ section.employee-profile {
       justify-content: space-between; } }
 
 #tabs li {
-  width: 125px; }
+  width: 150px; }
   @media (min-width: 768px) {
     #tabs li {
       width: 300px; } }
@@ -658,7 +690,7 @@ section.employee-profile {
   text-decoration: none;
   text-align: center;
   white-space: nowrap;
-  width: 125px; }
+  width: 150px; }
   @media (min-width: 768px) {
     #tabs a {
       padding: 1em 0;
@@ -794,6 +826,18 @@ section.employee-profile {
   .contact-us-instructions {
     padding: 0 10px 0 0;
     width: 35%; } }
+
+#form-submitted {
+  height: 40vh;
+  text-align: center; }
+  #form-submitted h1 {
+    font-family: "Arvo", serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 80px; }
+  #form-submitted a {
+    text-decoration: none;
+    color: #EE8F00; }
 
 body, html {
   background: #303030;

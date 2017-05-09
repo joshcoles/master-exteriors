@@ -9,10 +9,6 @@ const nodemailer = require("nodemailer");
 const path = require("path");
 const PORT = process.env.PORT || 1990;
 const dotenv = require('dotenv');
-// There's no need to check if .env exists, dotenv will check this // for you. It will show a small warning which can be disabled when // using this in production.
-
-
-
 
 //========================================================================================================================
 // Middleware
@@ -22,7 +18,6 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 dotenv.load();
-
 
 app.get('/', (req, res) => {
   res.render('home');
@@ -38,6 +33,10 @@ app.get('/services', (req, res)=> {
 
 app.get('/contact', (req, res)=> {
   res.render('contact');
+})
+
+app.get('/form-submitted', (req, res) => {
+  res.render('form-submitted');
 })
 
 app.post('/contact', (req, res)=> {
@@ -63,6 +62,8 @@ app.post('/contact', (req, res)=> {
     text: user_message,
   }
   transporter.sendMail(message);
+
+  res.redirect('/form-submitted');
 })
 
 

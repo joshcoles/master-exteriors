@@ -91,27 +91,25 @@ input, select {
   @media (min-width: 1024px) {
     .desktop-nav-links {
       display: flex; } }
-
-.desktop-nav-links ul {
-  display: none; }
+  .desktop-nav-links ul {
+    display: none; }
+    @media (min-width: 1024px) {
+      .desktop-nav-links ul {
+        align-items: center;
+        display: flex;
+        justify-content: space-around;
+        padding: 5px 0 0 30px; } }
   @media (min-width: 1024px) {
-    .desktop-nav-links ul {
-      align-items: center;
-      display: flex;
-      justify-content: space-around;
-      padding: 5px 0 0 30px; } }
-
-@media (min-width: 1024px) {
-  .desktop-nav-links ul li {
-    list-style: none;
-    margin: 0 10px;
-    padding: 10px 20px;
-    transition: box-shadow 0.5s; }
-    .desktop-nav-links ul li:hover {
-      box-shadow: inset 0 0 0 25px #EE8F00;
+    .desktop-nav-links li {
+      list-style: none;
+      margin: 0 10px;
+      padding: 10px 20px;
       transition: box-shadow 0.5s; }
-      .desktop-nav-links ul li:hover #mobile-header a {
-        color: black; } }
+      .desktop-nav-links li:hover {
+        box-shadow: inset 0 0 0 25px #EE8F00;
+        transition: box-shadow 0.5s; }
+        .desktop-nav-links li:hover header a {
+          color: black; } }
 
 .hamburger-bun {
   background: #EE8F00;
@@ -124,7 +122,7 @@ input, select {
       margin: 8px;
       width: 35px; } }
 
-#mobile-header {
+header {
   display: flex;
   background: #303030;
   height: 80px;
@@ -132,18 +130,18 @@ input, select {
   right: 0;
   top: 0; }
   @media (min-width: 768px) {
-    #mobile-header {
+    header {
       height: 100px; } }
 
-#mobile-header a {
+header a {
   text-decoration: none;
   color: #FFFFFF; }
   @media (min-width: 1024px) {
-    #mobile-header a {
+    header a {
       font-family: "Arvo", serif;
       font-size: 20px; } }
 
-#mobile-header h1 {
+header h1 {
   color: #EE8F00;
   font-family: "Arvo", serif;
   font-size: 20px;
@@ -152,15 +150,15 @@ input, select {
   line-height: 80px;
   padding: 0 0 0 15px; }
   @media (min-width: 768px) {
-    #mobile-header h1 {
+    header h1 {
       line-height: 100px;
       padding: 0 0 0 40px; } }
 
-#mobile-header .logo a {
+header .logo a {
   color: #EE8F00;
   font-family: "Arvo", serif; }
   @media (min-width: 768px) {
-    #mobile-header .logo a {
+    header .logo a {
       font-size: 30px; } }
 
 .nav-button {
@@ -193,25 +191,24 @@ input, select {
   top: 0;
   width: 100%;
   z-index: -1; }
+  .nav-dropdown li {
+    display: none;
+    font-family: Helvetica;
+    width: 100%; }
+  .nav-dropdown a {
+    color: white;
+    display: block;
+    font-family: "Arvo", serif;
+    font-size: 20px;
+    padding: 12px 5%;
+    text-decoration: none;
+    width: 90%; }
+    @media (min-width: 768px) {
+      .nav-dropdown a {
+        font-size: 26px;
+        padding: 16px 5%; } }
 
-.nav-dropdown li {
-  display: none;
-  font-family: Helvetica;
-  width: 100%; }
-
-.nav-dropdown li a {
-  color: white;
-  display: block;
-  font-family: "Arvo", serif;
-  font-size: 20px;
-  padding: 12px 5%;
-  text-decoration: none;
-  width: 90%; }
-  @media (min-width: 768px) {
-    .nav-dropdown li a {
-      font-size: 26px;
-      padding: 16px 5%; } }
-
+.nav-dropdown
 .nav-dropdown li a:hover {
   background: #EE8F00; }
 
@@ -226,6 +223,11 @@ input, select {
 .nav-dropdown.open li a {
   text-align: right; }
 
+.contact-info {
+  font-family: "Roboto", sans-Serif;
+  font-style: normal;
+  line-height: 18px; }
+
 footer {
   background: #303030;
   bottom: 0;
@@ -238,31 +240,22 @@ footer {
   @media (min-width: 768px) {
     footer {
       padding: 40px 30px 40px 30px; } }
-  footer p, footer a {
+  footer p {
     color: #FFFFFF;
     font-size: 14px;
     text-align: left;
     text-decoration: none; }
     @media (min-width: 768px) {
-      footer p, footer a {
+      footer p {
         font-size: 20px;
         line-height: 26px; } }
     @media (min-width: 1024px) {
-      footer p, footer a {
+      footer p {
         font-size: 16px;
         line-height: 24px; } }
-
-.contact-info {
-  font-family: "Roboto", sans-Serif;
-  font-style: normal;
-  line-height: 18px; }
-
-.site-build {
-  color: #EE8F00;
-  margin: 20px 0 0 0;
-  right: 0; }
-  .site-build a {
-    color: #EE8F00; }
+  footer a {
+    color: #EE8F00;
+    text-decoration: none; }
 
 @media (min-width: 1024px) {
   .footer-content {
@@ -273,29 +266,18 @@ footer {
     max-width: 1000px;
     width: 100%; } }
 
-#home-experience {
-  background: #FFFFFF; }
-  @media (min-width: 1024px) {
-    #home-experience {
-      display: flex;
-      justify-content: center; }
-      #home-experience .home-text-container {
-        padding: 20px;
-        width: 60%; }
-      #home-experience img {
-        width: 38%; } }
-
-@media (min-width: 1024px) {
-  #home-experience-content-container {
-    align-items: center;
-    display: flex;
-    max-width: 1000px; } }
+.site-build {
+  color: #EE8F00;
+  margin: 20px 0 0 0;
+  right: 0; }
+  .site-build a {
+    color: #EE8F00; }
 
 .home-description {
   color: #303030;
-  font-size: 16px;
   font-family: "Roboto", sans-Serif;
   line-height: 18px;
+  font-size: 16px;
   padding: 0 0 20px 0;
   text-align: center; }
   @media (min-width: 768px) {
@@ -324,20 +306,20 @@ footer {
     flex-direction: row-reverse;
     max-width: 1000px; } }
 
-#home-quality {
+#home-experience {
   background: #FFFFFF; }
   @media (min-width: 1024px) {
-    #home-quality {
+    #home-experience {
       display: flex;
       justify-content: center; }
-      #home-quality .home-text-container {
+      #home-experience .home-text-container {
         padding: 20px;
         width: 60%; }
-      #home-quality img {
+      #home-experience img {
         width: 38%; } }
 
 @media (min-width: 1024px) {
-  #home-quality-content-container {
+  #home-experience-content-container {
     align-items: center;
     display: flex;
     max-width: 1000px; } }
@@ -349,18 +331,6 @@ footer {
   @media (min-width: 768px) {
     .home-main-image {
       height: 300px; } }
-
-.home-tagline {
-  font-family: "Arvo", serif;
-  font-size: 26px;
-  padding: 0 0 15px 0;
-  text-align: center; }
-  @media (min-width: 768px) {
-    .home-tagline {
-      font-size: 34px; } }
-  @media (min-width: 1024px) {
-    .home-tagline {
-      font-size: 42px; } }
 
 #home-slider {
   height: 200px; }
@@ -406,6 +376,36 @@ footer {
     .home-slider-overlay-text {
       font-size: 16px; } }
 
+.home-tagline {
+  font-family: "Arvo", serif;
+  font-size: 26px;
+  padding: 0 0 15px 0;
+  text-align: center; }
+  @media (min-width: 768px) {
+    .home-tagline {
+      font-size: 34px; } }
+  @media (min-width: 1024px) {
+    .home-tagline {
+      font-size: 42px; } }
+
+#home-quality {
+  background: #FFFFFF; }
+  @media (min-width: 1024px) {
+    #home-quality {
+      display: flex;
+      justify-content: center; }
+      #home-quality .home-text-container {
+        padding: 20px;
+        width: 60%; }
+      #home-quality img {
+        width: 38%; } }
+
+@media (min-width: 1024px) {
+  #home-quality-content-container {
+    align-items: center;
+    display: flex;
+    max-width: 1000px; } }
+
 .slick-dots li button:before {
   font-size: 12px !important;
   color: white !important; }
@@ -421,9 +421,9 @@ footer {
       font-size: 16px !important; } }
 
 .slider-image {
-  width: 100%;
   height: 200px;
-  object-fit: cover; }
+  object-fit: cover;
+  width: 100%; }
   @media (min-width: 768px) {
     .slider-image {
       height: 300px; } }
@@ -433,16 +433,6 @@ footer {
 
 ul.slick-dots {
   margin-bottom: 40px; }
-
-.about-name {
-  color: #EE8F00;
-  font-family: "Arvo", serif;
-  font-size: 24px;
-  letter-spacing: 0.1rem;
-  margin: 10px 0 0 0; }
-  @media (min-width: 768px) {
-    .about-name {
-      font-size: 40px; } }
 
 .about-description {
   font-family: "Roboto", sans-Serif;
@@ -477,17 +467,15 @@ ul.slick-dots {
     .about-main-image {
       height: 300px; } }
 
-#tabs.about-page-tabs {
-  justify-content: space-around;
-  margin-top: -20px;
-  padding-bottom: 10px; }
+.about-name {
+  color: #EE8F00;
+  font-family: "Arvo", serif;
+  font-size: 24px;
+  letter-spacing: 0.1rem;
+  margin: 10px 0 0 0; }
   @media (min-width: 768px) {
-    #tabs.about-page-tabs {
-      margin-top: -30px; } }
-  @media (min-width: 1024px) {
-    #tabs.about-page-tabs {
-      justify-content: space-between;
-      max-width: 900px; } }
+    .about-name {
+      font-size: 40px; } }
 
 .about-title {
   font-family: "Arvo", serif;
@@ -498,16 +486,6 @@ ul.slick-dots {
   @media (min-width: 768px) {
     .about-title {
       font-size: 24px; } }
-
-h1.about-title.history-title {
-  color: orange;
-  font-size: 20px;
-  font-style: normal;
-  margin: 10px 0; }
-  @media (min-width: 768px) {
-    h1.about-title.history-title {
-      font-size: 28px;
-      margin: 20px 0; } }
 
 #content {
   background: #fff;
@@ -530,6 +508,16 @@ h1.about-title.history-title {
   @media (min-width: 1024px) {
     .employee-profile img {
       width: 30%; } }
+
+h1.about-title.history-title {
+  color: orange;
+  font-size: 20px;
+  font-style: normal;
+  margin: 10px 0; }
+  @media (min-width: 768px) {
+    h1.about-title.history-title {
+      font-size: 28px;
+      margin: 20px 0; } }
 
 section.about-page {
   background: #FFFFFF;
@@ -562,6 +550,18 @@ section#tab-about {
   @media (min-width: 1024px) {
     section#tab-about {
       margin: 0 auto;
+      max-width: 900px; } }
+
+#tabs.about-page-tabs {
+  justify-content: space-around;
+  margin-top: -20px;
+  padding-bottom: 10px; }
+  @media (min-width: 768px) {
+    #tabs.about-page-tabs {
+      margin-top: -30px; } }
+  @media (min-width: 1024px) {
+    #tabs.about-page-tabs {
+      justify-content: space-between;
       max-width: 900px; } }
 
 .services-description {
@@ -646,15 +646,6 @@ section#tab-about {
     .services-tagline {
       margin: 10px 0 20px 0; } }
 
-.services-title {
-  font-family: "Arvo", serif;
-  font-size: 24px;
-  margin: 10px 0 5px 0; }
-  @media (min-width: 768px) {
-    .services-title {
-      font-size: 36px;
-      margin: 10px 0 20px 0; } }
-
 .services-tabs-section {
   margin: 0;
   padding: 0 10px; }
@@ -687,6 +678,15 @@ section#tab-about {
     .services-tabs-section {
       margin-top: -30px;
       padding: 10px 10; } }
+
+.services-title {
+  font-family: "Arvo", serif;
+  font-size: 24px;
+  margin: 10px 0 5px 0; }
+  @media (min-width: 768px) {
+    .services-title {
+      font-size: 36px;
+      margin: 10px 0 20px 0; } }
 
 #tabs {
   align-items: center;
@@ -770,11 +770,14 @@ section#tab-about {
 .contact-us-content {
   background: #FFFFFF;
   display: flex;
-  flex-direction: row-reverse;
   justify-content: center;
+  flex-direction: column;
   margin: 0 auto;
   max-width: 1000px;
   width: 100%; }
+  @media (min-width: 1024px) {
+    .contact-us-content {
+      flex-direction: row-reverse; } }
 
 .contact-us-form {
   background: #EE8F00;
@@ -832,8 +835,8 @@ section#tab-about {
   .contact-us-form input {
     font-size: 16px;
     margin: 5px 0 20px 0;
-    width: 98%;
-    -webkit-appearance: none; }
+    -webkit-appearance: none;
+    width: 98%; }
   .contact-us-form label {
     font-family: "Arvo", serif;
     margin: 10px 0;
@@ -850,6 +853,10 @@ section#tab-about {
       .contact-us-form textarea {
         height: 120px; } }
 
+@media (min-width: 1024px) {
+  .contact-us-instructions {
+    padding: 0 10px 0 0;
+    width: 35%; } }
 .contact-us-instructions h1 {
   font-size: 20px;
   margin-top: 20px; }
@@ -864,22 +871,18 @@ section#tab-about {
   @media (min-width: 1024px) {
     .contact-us-instructions p {
       font-size: 16px; } }
-@media (min-width: 1024px) {
-  .contact-us-instructions {
-    padding: 0 10px 0 0;
-    width: 35%; } }
 
 #form-submitted {
   height: 40vh;
   text-align: center; }
+  #form-submitted a {
+    text-decoration: none;
+    color: #EE8F00; }
   #form-submitted h1 {
     font-family: "Arvo", serif;
     font-size: 22px;
     margin-bottom: 20px;
     margin-top: 80px; }
-  #form-submitted a {
-    text-decoration: none;
-    color: #EE8F00; }
 
 body, html {
   background: #303030;

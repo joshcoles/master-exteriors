@@ -1,14 +1,3 @@
-.about-name {
-  color: $primary-light;
-  font-family: $primary-font;
-  font-size: 24px;
-  letter-spacing: 0.1rem;
-  margin: 10px 0 0 0;
-  @media(min-width:768px){
-    font-size: 40px;
-  }
-}
-
 .about-description {
   font-family: $secondary-font;
   font-size: 14px;
@@ -46,16 +35,14 @@
   }
 }
 
-#tabs.about-page-tabs {
-  justify-content: space-around;
-  margin-top: -20px;
-  padding-bottom: 10px;
+.about-name {
+  color: $primary-light;
+  font-family: $primary-font;
+  font-size: 24px;
+  letter-spacing: 0.1rem;
+  margin: 10px 0 0 0;
   @media(min-width:768px){
-    margin-top: -30px;
-  }
-  @media(min-width:1024px){
-    justify-content: space-between;
-    max-width: 900px;
+    font-size: 40px;
   }
 }
 
@@ -67,17 +54,6 @@
   margin: 5px 0 20px 0;
   @media(min-width:768px){
     font-size: 24px;
-  }
-}
-
-h1.about-title.history-title {
-  color: orange;
-  font-size: 20px;
-  font-style: normal;
-  margin: 10px 0;
-  @media(min-width:768px){
-    font-size: 28px;
-    margin: 20px 0;
   }
 }
 
@@ -102,6 +78,17 @@ h1.about-title.history-title {
   }
   @media(min-width:1024px){
     width: 30%;
+  }
+}
+
+h1.about-title.history-title {
+  color: orange;
+  font-size: 20px;
+  font-style: normal;
+  margin: 10px 0;
+  @media(min-width:768px){
+    font-size: 28px;
+    margin: 20px 0;
   }
 }
 
@@ -137,6 +124,19 @@ section#tab-about {
   }
   @media(min-width:1024px){
     margin: 0 auto;
+    max-width: 900px;
+  }
+}
+
+#tabs.about-page-tabs {
+  justify-content: space-around;
+  margin-top: -20px;
+  padding-bottom: 10px;
+  @media(min-width:768px){
+    margin-top: -30px;
+  }
+  @media(min-width:1024px){
+    justify-content: space-between;
     max-width: 900px;
   }
 }

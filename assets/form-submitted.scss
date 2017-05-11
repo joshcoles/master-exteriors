@@ -1,17 +1,15 @@
 #form-submitted {
   height: 40vh;
   text-align: center;
-
+  a {
+    text-decoration: none;
+    color: $primary-light;
+  }
   h1 {
     font-family: $primary-font;
     font-size: 22px;
     margin-bottom: 20px;
     margin-top: 80px;
-  }
-
-  a {
-    text-decoration: none;
-    color: $primary-light;
   }
 }
 

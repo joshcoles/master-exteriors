@@ -89,16 +89,6 @@
   }
 }
 
-.services-title {
-  font-family: $primary-font;
-  font-size: 24px;
-  margin: 10px 0 5px 0;
-  @media(min-width:768px){
-    font-size: 36px;
-    margin: 10px 0 20px 0;
-  }
-}
-
 .services-tabs-section {
   margin: 0;
   padding: 0 10px;
@@ -133,5 +123,15 @@
   @media(min-width:768px){
     margin-top: -30px;
     padding: 10px 10;
+  }
+}
+
+.services-title {
+  font-family: $primary-font;
+  font-size: 24px;
+  margin: 10px 0 5px 0;
+  @media(min-width:768px){
+    font-size: 36px;
+    margin: 10px 0 20px 0;
   }
 }

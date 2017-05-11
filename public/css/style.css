@@ -230,10 +230,14 @@ footer {
   background: #303030;
   bottom: 0;
   display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   left: 0;
   right: 0;
-  padding: 40px 20px 40px 40px; }
+  padding: 40px 15px 40px 15px; }
+  @media (min-width: 768px) {
+    footer {
+      padding: 40px 30px 40px 30px; } }
   footer p, footer a {
     color: #FFFFFF;
     font-size: 14px;
@@ -249,10 +253,25 @@ footer {
         line-height: 24px; } }
 
 .contact-info {
-  color: #000000;
   font-family: "Roboto", sans-Serif;
   font-style: normal;
   line-height: 18px; }
+
+.site-build {
+  color: #EE8F00;
+  margin: 20px 0 0 0;
+  right: 0; }
+  .site-build a {
+    color: #EE8F00; }
+
+@media (min-width: 1024px) {
+  .footer-content {
+    align-items: bottom;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 100%; } }
 
 #home-experience {
   background: #FFFFFF; }
@@ -353,18 +372,22 @@ footer {
       height: 400px; } }
 
 .home-slider-overlay {
-  display: none; }
+  background: rgba(238, 143, 0, 0.8);
+  color: white;
+  display: block;
+  height: auto;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 130px;
+  z-index: 5; }
   @media (min-width: 768px) {
     .home-slider-overlay {
-      background: rgba(238, 143, 0, 0.8);
-      display: block;
-      height: auto;
-      padding: 20px;
-      position: absolute;
-      right: 0;
-      top: 250px;
-      width: 200px;
-      z-index: 5; } }
+      top: 200px;
+      width: 200px; } }
   @media (min-width: 1024px) {
     .home-slider-overlay {
       top: 300px;
@@ -434,6 +457,7 @@ ul.slick-dots {
       width: 45%; } }
   @media (min-width: 1024px) {
     .about-description {
+      top: 110px;
       width: 60%; } }
 
 @media (min-width: 768px) {
@@ -474,12 +498,13 @@ ul.slick-dots {
     .about-title {
       font-size: 24px; } }
 
-.about-title.history-title {
+h1.about-title.history-title {
   color: orange;
   font-size: 20px;
+  font-style: normal;
   margin: 10px 0; }
   @media (min-width: 768px) {
-    .about-title.history-title {
+    h1.about-title.history-title {
       font-size: 28px;
       margin: 20px 0; } }
 
@@ -523,7 +548,7 @@ section.employee-profile {
   @media (min-width: 1024px) {
     section.employee-profile {
       margin: 0 auto 30px auto;
-      max-width: 1000px;
+      max-width: 900px;
       padding-top: 20px; } }
 
 section#tab-about {
@@ -536,7 +561,7 @@ section#tab-about {
   @media (min-width: 1024px) {
     section#tab-about {
       margin: 0 auto;
-      max-width: 1000px; } }
+      max-width: 900px; } }
 
 .services-description {
   font-family: "Roboto", sans-Serif;
@@ -741,12 +766,16 @@ section#tab-about {
   background: #303030;
   color: #FFFFFF; }
 
-@media (min-width: 1024px) {
-  section#contact-us-section {
-    display: flex;
-    flex-direction: row-reverse; } }
+.contact-us-content {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%; }
 
-.contact-us {
+.contact-us-form {
   background: #EE8F00;
   color: white;
   padding: 10px;
@@ -754,26 +783,26 @@ section#tab-about {
   -webkit-box-shadow: 0 10px 6px -6px #777;
   -moz-box-shadow: 0 10px 6px -6px #777;
   box-shadow: 0 10px 6px -6px #777; }
-  .contact-us ::-webkit-input-placeholder {
+  .contact-us-form ::-webkit-input-placeholder {
     color: #636363;
     opacity: 0.4; }
-  .contact-us :-moz-placeholder {
+  .contact-us-form :-moz-placeholder {
     color: #636363;
     opacity: 0.4; }
-  .contact-us ::-moz-placeholder {
+  .contact-us-form ::-moz-placeholder {
     color: #636363;
     opacity: 0.4; }
-  .contact-us :-ms-input-placeholder {
+  .contact-us-form :-ms-input-placeholder {
     color: #636363;
     opacity: 0.4; }
   @media (min-width: 768px) {
-    .contact-us {
+    .contact-us-form {
       padding: 20px; } }
   @media (min-width: 1024px) {
-    .contact-us {
+    .contact-us-form {
       right: 0;
       width: 60%; } }
-  .contact-us button {
+  .contact-us-form button {
     background: #303030;
     border: none;
     color: white;
@@ -784,40 +813,40 @@ section#tab-about {
     padding: 10px;
     width: 100%; }
     @media (min-width: 768px) {
-      .contact-us button {
+      .contact-us-form button {
         font-size: 20px;
         padding: 15px; } }
     @media (min-width: 1024px) {
-      .contact-us button {
+      .contact-us-form button {
         width: 20%; }
-        .contact-us button:hover {
+        .contact-us-form button:hover {
           background: #262626; } }
-  .contact-us h1 {
+  .contact-us-form h1 {
     font-family: "Arvo", serif;
     font-size: 24px;
     margin-bottom: 10px; }
     @media (min-width: 768px) {
-      .contact-us h1 {
+      .contact-us-form h1 {
         font-size: 30px; } }
-  .contact-us input {
+  .contact-us-form input {
     font-size: 16px;
     margin: 5px 0 20px 0;
     width: 98%;
     -webkit-appearance: none; }
-  .contact-us label {
+  .contact-us-form label {
     font-family: "Arvo", serif;
     margin: 10px 0;
     width: 100%; }
     @media (min-width: 768px) {
-      .contact-us label {
+      .contact-us-form label {
         font-size: 20px; } }
-  .contact-us textarea {
+  .contact-us-form textarea {
     font-size: 16px;
     height: 100px;
     margin-top: 5px;
     width: 98%; }
     @media (min-width: 768px) {
-      .contact-us textarea {
+      .contact-us-form textarea {
         height: 120px; } }
 
 .contact-us-instructions h1 {
@@ -875,6 +904,9 @@ hr {
 
 .first-section {
   padding: 0; }
+
+.link {
+  color: #EE8F00; }
 
 h1, h2, h3, h4, h5, h6, p, a {
   font-family: "Roboto", sans-Serif; }

@@ -22,6 +22,7 @@
     width: 45%;
   }
   @media(min-width:1024px){
+    top: 110px;
     width: 60%;
   }
 }
@@ -69,9 +70,10 @@
   }
 }
 
-.about-title.history-title {
+h1.about-title.history-title {
   color: orange;
   font-size: 20px;
+  font-style: normal;
   margin: 10px 0;
   @media(min-width:768px){
     font-size: 28px;
@@ -121,7 +123,7 @@ section.employee-profile {
   }
   @media(min-width:1024px){
     margin: 0 auto 30px auto;
-    max-width: 1000px;
+    max-width: 900px;
     padding-top: 20px;
   }
 }
@@ -135,6 +137,6 @@ section#tab-about {
   }
   @media(min-width:1024px){
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 900px;
   }
 }

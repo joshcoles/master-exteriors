@@ -373,19 +373,17 @@ footer {
 
 .home-slider-overlay {
   background: rgba(238, 143, 0, 0.8);
-  color: white;
   display: block;
   height: auto;
-  font-size: 12px;
-  line-height: 14px;
-  padding: 20px;
+  padding: 10px;
   position: absolute;
   right: 0;
   top: 100px;
-  width: 130px;
+  width: 80px;
   z-index: 5; }
   @media (min-width: 768px) {
     .home-slider-overlay {
+      padding: 20px;
       top: 200px;
       width: 200px; } }
   @media (min-width: 1024px) {
@@ -393,17 +391,20 @@ footer {
       top: 300px;
       width: 250px; } }
 
-@media (min-width: 768px) {
-  .home-slider-overlay-text {
-    color: white;
-    font-family: "Roboto", sans-Serif;
-    font-size: 14px;
-    letter-spacing: 1.04px;
-    line-height: 20px;
-    opacity: 1; } }
-@media (min-width: 1024px) {
-  .home-slider-overlay-text {
-    font-size: 16px; } }
+.home-slider-overlay-text {
+  color: white;
+  font-size: 8px;
+  line-height: 10px; }
+  @media (min-width: 768px) {
+    .home-slider-overlay-text {
+      font-family: "Roboto", sans-Serif;
+      font-size: 14px;
+      letter-spacing: 1.04px;
+      line-height: 20px;
+      opacity: 1; } }
+  @media (min-width: 1024px) {
+    .home-slider-overlay-text {
+      font-size: 16px; } }
 
 .slick-dots li button:before {
   font-size: 12px !important;

@@ -17,7 +17,7 @@ $(document).ready(function(){
       arrows: false,
       dots: true,
       infinite: true,
-      mobileFirst: true
+      mobileFirst: true,
     });
 
 //========================================================================================================================

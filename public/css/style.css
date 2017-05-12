@@ -135,7 +135,7 @@ header {
 
 header a {
   text-decoration: none;
-  color: #FFFFFF; }
+  color: #fff; }
   @media (min-width: 1024px) {
     header a {
       font-family: "Arvo", serif;
@@ -241,7 +241,7 @@ footer {
     footer {
       padding: 40px 30px 40px 30px; } }
   footer p {
-    color: #FFFFFF;
+    color: #fff;
     font-size: 14px;
     text-align: left;
     text-decoration: none; }
@@ -307,7 +307,7 @@ footer {
     max-width: 1000px; } }
 
 #home-experience {
-  background: #FFFFFF; }
+  background: #fff; }
   @media (min-width: 1024px) {
     #home-experience {
       display: flex;
@@ -389,7 +389,7 @@ footer {
       font-size: 42px; } }
 
 #home-quality {
-  background: #FFFFFF; }
+  background: #fff; }
   @media (min-width: 1024px) {
     #home-quality {
       display: flex;
@@ -520,12 +520,12 @@ h1.about-title.history-title {
       margin: 20px 0; } }
 
 section.about-page {
-  background: #FFFFFF;
+  background: #fff;
   padding-top: 20px; }
 
 section.employee-profile {
   background: #303030;
-  color: #FFFFFF;
+  color: #fff;
   margin-bottom: 20px;
   padding-top: 10px;
   -webkit-box-shadow: 0 10px 6px -6px #777;
@@ -721,7 +721,7 @@ section#tab-about {
   background: #303030;
   border-radius: 3px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
-  color: #FFFFFF;
+  color: #fff;
   float: left;
   padding: 1em 0;
   position: relative;
@@ -765,10 +765,10 @@ section#tab-about {
 
 #tab-about {
   background: #303030;
-  color: #FFFFFF; }
+  color: #fff; }
 
 .contact-us-content {
-  background: #FFFFFF;
+  background: #fff;
   display: flex;
   justify-content: center;
   flex-direction: column;

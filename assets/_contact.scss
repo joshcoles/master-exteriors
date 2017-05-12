@@ -74,10 +74,17 @@
   }
 
   input {
+    border: none;
     font-size: 16px;
     margin: 5px 0 20px 0;
+    padding: 3px;
     -webkit-appearance: none;
     width: 98%;
+  }
+
+  input.error {
+    border: none;
+    border-color: none;
   }
 
   label {
@@ -89,10 +96,24 @@
     }
   }
 
+  span.form-error {
+    color: black;
+    font-family: $primary-font;
+    position: relative;
+    text-shadow: none;
+    top: -10px;
+  }
+
+  .message-container span.form-error {
+    top: 5px;
+  }
+
   textarea {
+    border: none;
     font-size: 16px;
     height: 100px;
     margin-top: 5px;
+    padding: 3px;
     width: 98%;
     @media(min-width:768px){
       height: 120px;

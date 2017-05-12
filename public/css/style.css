@@ -833,10 +833,15 @@ section#tab-about {
       .contact-us-form h1 {
         font-size: 30px; } }
   .contact-us-form input {
+    border: none;
     font-size: 16px;
     margin: 5px 0 20px 0;
+    padding: 3px;
     -webkit-appearance: none;
     width: 98%; }
+  .contact-us-form input.error {
+    border: none;
+    border-color: none; }
   .contact-us-form label {
     font-family: "Arvo", serif;
     margin: 10px 0;
@@ -844,10 +849,20 @@ section#tab-about {
     @media (min-width: 768px) {
       .contact-us-form label {
         font-size: 20px; } }
+  .contact-us-form span.form-error {
+    color: black;
+    font-family: "Arvo", serif;
+    position: relative;
+    text-shadow: none;
+    top: -10px; }
+  .contact-us-form .message-container span.form-error {
+    top: 5px; }
   .contact-us-form textarea {
+    border: none;
     font-size: 16px;
     height: 100px;
     margin-top: 5px;
+    padding: 3px;
     width: 98%; }
     @media (min-width: 768px) {
       .contact-us-form textarea {

@@ -8,6 +8,16 @@ $(document).ready(function(){
       $(".nav-button, .nav-dropdown").toggleClass("open");
     });
 
+    //Hide the dropdown if visible
+    $('html').click(function() {
+      $(".nav-button, .nav-dropdown").removeClass("open");
+    });
+
+    //I believe this is to ignore the action on 'html' specifically.
+    $('.nav-button').click(function(event){
+        event.stopPropagation();
+    });
+
 //========================================================================================================================
 // Slick image sliders
 //========================================================================================================================

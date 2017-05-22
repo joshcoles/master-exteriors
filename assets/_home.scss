@@ -38,14 +38,6 @@
   }
 }
 
-// .reverse {
-//   flex-direction: row-reverse;
-// }
-
-// section.home {
-
-// }
-
 #home-experience {
   background: $white;
   @media(min-width:1024px){
@@ -80,6 +72,20 @@
 
 #home-slider {
   height: 200px;
+  // button.slick-prev {
+  //   margin-left: 60px;
+  //   z-index: 5;
+  //   &:before {
+  //     font-size: 40px;
+  //   }
+  // }
+  // button.slick-next {
+  //   margin-right: 60px;
+  //   z-index: 5;
+  //   &:before {
+  //     font-size: 40px;
+  //   }
+  // }
   @media(min-width:768px){
     height: 300px;
   }
@@ -162,18 +168,18 @@
 }
 
 .slick-dots li button:before {
-  font-size: 12px !important;
-  color: white !important;
+  font-size: 12px;
+  color: white;
   @media(min-width:1024px){
-    font-size: 16px !important;
+    font-size: 16px;
   }
 }
 
 .slick-dots li.slick-active button:before {
-  font-size: 12px !important;
-  color: white !important;
+  font-size: 12px;
+  color: white;
   @media(min-width:1024px){
-    font-size: 16px !important;
+    font-size: 16px;
   }
 }
 

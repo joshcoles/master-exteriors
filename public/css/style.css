@@ -103,13 +103,27 @@ input, select {
     .desktop-nav-links li {
       list-style: none;
       margin: 0 10px;
-      padding: 10px 20px;
-      transition: box-shadow 0.5s; }
-      .desktop-nav-links li:hover {
-        box-shadow: inset 0 0 0 25px #EE8F00;
-        transition: box-shadow 0.5s; }
-        .desktop-nav-links li:hover header a {
-          color: black; } }
+      padding: 10px 0;
+      margin: 0 20px;
+      position: relative;
+      text-decoration: none; }
+      .desktop-nav-links li:before {
+        content: "";
+        bottom: -3px;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        left: 0;
+        background-color: #fff;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s; }
+      .desktop-nav-links li:hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1); } }
 
 .hamburger-bun {
   background: #EE8F00;
@@ -285,41 +299,41 @@ footer {
       font-size: 18px;
       line-height: 22px; } }
 
-#home-detail {
+.home-detail {
   background: #636363; }
-  #home-detail * {
+  .home-detail * {
     color: white; }
   @media (min-width: 1024px) {
-    #home-detail {
+    .home-detail {
       display: flex;
       justify-content: center; }
-      #home-detail .home-text-container {
+      .home-detail .home-text-container {
         padding: 20px;
         width: 60%; }
-      #home-detail img {
+      .home-detail img {
         width: 38%; } }
 
 @media (min-width: 1024px) {
-  #home-detail-content-container {
+  .home-detail-content-container {
     align-items: center;
     display: flex;
     flex-direction: row-reverse;
     max-width: 1000px; } }
 
-#home-experience {
+.home-experience {
   background: #fff; }
   @media (min-width: 1024px) {
-    #home-experience {
+    .home-experience {
       display: flex;
       justify-content: center; }
-      #home-experience .home-text-container {
+      .home-experience .home-text-container {
         padding: 20px;
         width: 60%; }
-      #home-experience img {
+      .home-experience img {
         width: 38%; } }
 
 @media (min-width: 1024px) {
-  #home-experience-content-container {
+  .home-experience-content-container {
     align-items: center;
     display: flex;
     max-width: 1000px; } }
@@ -388,20 +402,20 @@ footer {
     .home-tagline {
       font-size: 42px; } }
 
-#home-quality {
+.home-quality {
   background: #fff; }
   @media (min-width: 1024px) {
-    #home-quality {
+    .home-quality {
       display: flex;
       justify-content: center; }
-      #home-quality .home-text-container {
+      .home-quality .home-text-container {
         padding: 20px;
         width: 60%; }
-      #home-quality img {
+      .home-quality img {
         width: 38%; } }
 
 @media (min-width: 1024px) {
-  #home-quality-content-container {
+  .home-quality-content-container {
     align-items: center;
     display: flex;
     max-width: 1000px; } }
@@ -433,6 +447,54 @@ footer {
 
 ul.slick-dots {
   margin-bottom: 40px; }
+
+.quote-callout {
+  background-color: #EE8F00;
+  height: 150px; }
+  .quote-callout .callout-content {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center; }
+  .quote-callout h2 {
+    color: #fff;
+    font-family: "Arvo", serif;
+    font-size: 32px;
+    margin-bottom: 20px; }
+  .quote-callout a {
+    color: #303030;
+    font-family: "Arvo", serif;
+    font-size: 26px;
+    text-decoration: none; }
+    .quote-callout a:hover {
+      color: #000; }
+  .quote-callout i {
+    font-family: FontAwesome;
+    font-size: 26px;
+    color: #303030;
+    margin-right: 5px; }
+
+.phone-link {
+  position: relative;
+  text-decoration: none; }
+  .phone-link:before {
+    content: "";
+    bottom: -5px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background-color: #303030;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s; }
+  .phone-link:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
 
 .about-description {
   font-family: "Roboto", sans-Serif;

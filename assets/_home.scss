@@ -11,7 +11,7 @@
   }
 }
 
-#home-detail {
+.home-detail {
   background: $secondary-light;
   * {
     color: white;
@@ -29,7 +29,7 @@
   }
 }
 
-#home-detail-content-container {
+.home-detail-content-container {
   @media(min-width:1024px){
     align-items: center;
     display: flex;
@@ -38,7 +38,7 @@
   }
 }
 
-#home-experience {
+.home-experience {
   background: $white;
   @media(min-width:1024px){
     display: flex;
@@ -53,7 +53,7 @@
   }
 }
 
-#home-experience-content-container {
+.home-experience-content-container {
   @media(min-width:1024px){
     align-items: center;
     display: flex;
@@ -72,20 +72,6 @@
 
 #home-slider {
   height: 200px;
-  // button.slick-prev {
-  //   margin-left: 60px;
-  //   z-index: 5;
-  //   &:before {
-  //     font-size: 40px;
-  //   }
-  // }
-  // button.slick-next {
-  //   margin-right: 60px;
-  //   z-index: 5;
-  //   &:before {
-  //     font-size: 40px;
-  //   }
-  // }
   @media(min-width:768px){
     height: 300px;
   }
@@ -144,7 +130,7 @@
   }
 }
 
-#home-quality {
+.home-quality {
   background: $white;
   @media(min-width:1024px){
     display: flex;
@@ -159,7 +145,7 @@
   }
 }
 
-#home-quality-content-container {
+.home-quality-content-container {
   @media(min-width:1024px){
     align-items: center;
     display: flex;
@@ -198,3 +184,69 @@
 ul.slick-dots {
   margin-bottom: 40px;
 }
+
+.quote-callout {
+  background-color: $primary-light;
+  height: 150px;
+  .callout-content {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  h2 {
+    color: $white;
+    font-family: $primary-font;
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  a {
+    color: $secondary-dark;
+    font-family: $primary-font;
+    font-size: 26px;
+    text-decoration: none;
+    &:hover {
+      color: $black;
+    }
+  }
+  i {
+    font-family: FontAwesome;
+    font-size: 26px;
+    color: $secondary-dark;
+    margin-right: 5px;
+  }
+}
+
+.phone-link {
+  position: relative;
+  text-decoration: none;
+  &:before {
+    content: "";
+    bottom: -5px;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background-color: $secondary-dark;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  &:hover {
+    &:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+    }
+  }
+}
+
+
+
+
+
+
+

@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "sass":  "sass --watch assets/style.scss:public/css/style.css"
+    "sass": "sass --watch assets/style.scss:public/css/style.css"
   },
   "author": "Josh Coles",
   "license": "ISC",

@@ -7,7 +7,7 @@ const app = express();
 const bodyParser = require("body-parser");
 const nodemailer = require("nodemailer");
 const path = require("path");
-const PORT = process.env.PORT || 1990;
+const PORT = process.env.PORT || 3000;
 const dotenv = require('dotenv');
 
 //========================================================================================================================
@@ -18,6 +18,8 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static('public'));
 dotenv.load();
+
+console.log("I'm running");
 
 app.get('/', (req, res) => {
   res.render('home');

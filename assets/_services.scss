@@ -56,9 +56,11 @@
 }
 
 .services-section {
+  background-image: url('../images/tiny_grid.png');
+  background-repeat: repeat;
   padding: 15px 15px 30px 15px;
   @media(min-width:768px){
-    margin-top: -30px;
+    margin-top: -33px;
     padding: 40px 60px;
   }
   @media(min-width:1024px){
@@ -90,6 +92,8 @@
 }
 
 .services-tabs-section {
+  background-image: url('../images/tiny_grid.png');
+  background-repeat: repeat;
   margin: 0;
   padding: 0 10px;
   ul#tabs li {

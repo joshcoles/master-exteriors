@@ -24,7 +24,7 @@
       width: 70%;
     }
     img {
-      width: 28%;
+      width: 38%;
     }
   }
 }
@@ -39,7 +39,8 @@
 }
 
 .home-experience {
-  background: $white;
+  background-image: url('../images/tiny_grid.png');
+  background-repeat: repeat;
   @media(min-width:1024px){
     display: flex;
     justify-content: center;
@@ -131,7 +132,8 @@
 }
 
 .home-quality {
-  background: $white;
+  background-image: url('../images/tiny_grid.png');
+  background-repeat: repeat;
   @media(min-width:1024px){
     display: flex;
     justify-content: center;

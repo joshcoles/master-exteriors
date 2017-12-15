@@ -1,5 +1,4 @@
 .contact-us-content {
-  background: $white;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -9,6 +8,11 @@
   @media(min-width: 1024px){
     flex-direction: row-reverse;
   }
+}
+
+#contact-us-section {
+  background-image: url('../images/tiny_grid.png');
+  background-repeat: repeat;
 }
 
 .contact-us-form {
@@ -139,7 +143,9 @@
     margin: 10px 0 0 0;
     text-align: left;
     @media(min-width:1024px){
-      font-size: 16px;
+      font-size: 20px;
+      line-height: 1.2;
+      padding-right: 20px;
     }
   }
 }

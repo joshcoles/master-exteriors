@@ -263,6 +263,7 @@ header .logo a {
 
 footer {
   background: #303030;
+  background: #636363;
   bottom: 0;
   display: flex;
   flex-direction: column;

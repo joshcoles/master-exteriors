@@ -41,33 +41,10 @@ app.get('/form-submitted', (req, res) => {
   res.render('form-submitted');
 })
 
-app.post('/contact', (req, res)=> {
-  let mailOpts, smtpTrans;
-
-  let user_name = req.body.user_name;
-  let user_email = req.body.user_email;
-  let user_phone = req.body.user_phone;
-  let user_message = req.body.user_message;
-
-  let transporter = nodemailer.createTransport({
-    service: 'Gmail',
-    auth: {
-      user: process.env.GMAIL_SECRET_USERNAME,
-      pass: process.env.GMAIL_SECRET_PASSWORD
-    }
-  });
-
-  let message = {
-    from: user_name + " &lt; " + user_email + "&gt;",
-    to: 'josh@joshcoles.com',
-    subject: "Master Exteriors Contact Form",
-    text: user_message,
-  }
-  transporter.sendMail(message);
-
-  res.redirect('/form-submitted');
-})
-
+// 404 handling
+app.get('*', function (req, res) {
+  res.render('404');
+});
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}!`);

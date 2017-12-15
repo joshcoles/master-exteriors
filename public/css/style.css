@@ -1035,6 +1035,24 @@ section#tab-about {
     margin-bottom: 20px;
     margin-top: 80px; }
 
+.page-not-found {
+  height: 60vh;
+  background-image: url("../images/tiny_grid.png");
+  background-repeat: repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .page-not-found h2 {
+    font-family: "Arvo", serif;
+    font-size: 26px;
+    color: #303030; }
+
 body, html {
   background: #303030;
   height: 100%;

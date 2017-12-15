@@ -1,0 +1,19 @@
+.page-not-found {
+  height: 60vh;
+  background-image: url('../images/tiny_grid.png');
+  background-repeat: repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  h2 {
+    font-family: $primary-font;
+    font-size: 26px;
+    color: $secondary-dark;
+  }
+}

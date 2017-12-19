@@ -500,7 +500,8 @@ ul.slick-dots {
     color: #fff;
     font-family: "Arvo", Georgia, serif;
     font-size: 32px;
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-align: center; }
   .quote-callout a {
     color: #303030;
     font-family: "Arvo", Georgia, serif;

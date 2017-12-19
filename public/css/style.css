@@ -152,12 +152,12 @@ header a {
   color: #fff; }
   @media (min-width: 1024px) {
     header a {
-      font-family: "Arvo", serif;
+      font-family: "Arvo", Georgia, serif;
       font-size: 20px; } }
 
 header h1 {
   color: #EE8F00;
-  font-family: "Arvo", serif;
+  font-family: "Arvo", Georgia, serif;
   font-size: 20px;
   font-weight: 100;
   letter-spacing: 0.08em;
@@ -170,7 +170,7 @@ header h1 {
 
 header .logo a {
   color: #EE8F00;
-  font-family: "Arvo", serif; }
+  font-family: "Arvo", Georgia, serif; }
   @media (min-width: 768px) {
     header .logo a {
       font-size: 30px; } }
@@ -212,7 +212,7 @@ header .logo a {
   .nav-dropdown a {
     color: white;
     display: block;
-    font-family: "Arvo", serif;
+    font-family: "Arvo", Georgia, serif;
     font-size: 20px;
     padding: 12px 5%;
     text-decoration: none;
@@ -238,7 +238,7 @@ header .logo a {
   text-align: right; }
 
 .contact-info {
-  font-family: "Roboto", sans-Serif;
+  font-family: "Roboto", Helvetica, sans-Serif;
   font-style: normal;
   line-height: 18px; }
   .contact-info a {
@@ -326,7 +326,7 @@ footer {
 
 .home-description {
   color: #303030;
-  font-family: "Roboto", sans-Serif;
+  font-family: "Roboto", Helvetica, sans-Serif;
   line-height: 18px;
   font-size: 16px;
   padding: 0 0 20px 0;
@@ -419,7 +419,7 @@ footer {
   line-height: 10px; }
   @media (min-width: 768px) {
     .home-slider-overlay-text {
-      font-family: "Roboto", sans-Serif;
+      font-family: "Roboto", Helvetica, sans-Serif;
       font-size: 14px;
       letter-spacing: 1.04px;
       line-height: 20px;
@@ -429,7 +429,7 @@ footer {
       font-size: 16px; } }
 
 .home-tagline {
-  font-family: "Arvo", serif;
+  font-family: "Arvo", Georgia, serif;
   font-size: 26px;
   padding: 0 0 15px 0;
   text-align: center; }
@@ -498,12 +498,12 @@ ul.slick-dots {
     justify-content: center; }
   .quote-callout h2 {
     color: #fff;
-    font-family: "Arvo", serif;
+    font-family: "Arvo", Georgia, serif;
     font-size: 32px;
     margin-bottom: 20px; }
   .quote-callout a {
     color: #303030;
-    font-family: "Arvo", serif;
+    font-family: "Arvo", Georgia, serif;
     font-size: 26px;
     text-decoration: none; }
     .quote-callout a:hover {
@@ -536,7 +536,7 @@ ul.slick-dots {
     transform: scaleX(1); }
 
 .about-description {
-  font-family: "Roboto", sans-Serif;
+  font-family: "Roboto", Helvetica, sans-Serif;
   font-size: 14px;
   line-height: 18px; }
   @media (min-width: 768px) {
@@ -592,7 +592,7 @@ ul.slick-dots {
 
 .about-name {
   color: #EE8F00;
-  font-family: "Arvo", serif;
+  font-family: "Arvo", Georgia, serif;
   font-size: 24px;
   letter-spacing: 0.1rem;
   margin: 10px 0 0 0; }
@@ -601,7 +601,7 @@ ul.slick-dots {
       font-size: 40px; } }
 
 .about-title {
-  font-family: "Arvo", serif;
+  font-family: "Arvo", Georgia, serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 100;
@@ -703,7 +703,7 @@ section#tab-about {
       max-width: 900px; } }
 
 .services-description {
-  font-family: "Roboto", sans-Serif;
+  font-family: "Roboto", Helvetica, sans-Serif;
   font-size: 14px;
   line-height: 18px;
   margin: 10px 0; }
@@ -714,7 +714,7 @@ section#tab-about {
 
 .services-list {
   color: white;
-  font-family: "Arvo", serif;
+  font-family: "Arvo", Georgia, serif;
   letter-spacing: 0.1rem;
   line-height: 22px;
   margin: 0 0 10px 25px; }
@@ -734,7 +734,7 @@ section#tab-about {
       margin: 0 0 20px 0; } }
 
 .services-other {
-  font-family: "Arvo", serif;
+  font-family: "Arvo", Georgia, serif;
   font-size: 18px;
   font-weight: 100;
   margin: 10px 0 5px 0;
@@ -772,7 +772,7 @@ section#tab-about {
       max-width: 1000px; } }
 
 .services-tagline {
-  font-family: "Arvo", serif;
+  font-family: "Arvo", Georgia, serif;
   font-size: 16px;
   font-style: italic;
   font-weight: 100;
@@ -822,7 +822,7 @@ section#tab-about {
       padding: 10px 10; } }
 
 .services-title {
-  font-family: "Arvo", serif;
+  font-family: "Arvo", Georgia, serif;
   font-size: 24px;
   margin: 10px 0 5px 0; }
   @media (min-width: 768px) {
@@ -895,7 +895,7 @@ section#tab-about {
     background: #575757; }
 
 .tab-text {
-  font-family: "Arvo", serif;
+  font-family: "Arvo", Georgia, serif;
   font-size: 14px; }
   @media (min-width: 768px) {
     .tab-text {
@@ -955,7 +955,7 @@ section#tab-about {
     border: none;
     color: white;
     cursor: pointer;
-    font-family: "Arvo", serif;
+    font-family: "Arvo", Georgia, serif;
     font-size: 14px;
     margin: 15px 0 10px 0;
     padding: 10px;
@@ -970,7 +970,7 @@ section#tab-about {
         .contact-us-form button:hover {
           background: #262626; } }
   .contact-us-form h1 {
-    font-family: "Arvo", serif;
+    font-family: "Arvo", Georgia, serif;
     font-size: 24px;
     margin-bottom: 10px; }
     @media (min-width: 768px) {
@@ -987,7 +987,7 @@ section#tab-about {
     border: none;
     border-color: none; }
   .contact-us-form label {
-    font-family: "Arvo", serif;
+    font-family: "Arvo", Georgia, serif;
     margin: 10px 0;
     width: 100%; }
     @media (min-width: 768px) {
@@ -995,7 +995,7 @@ section#tab-about {
         font-size: 20px; } }
   .contact-us-form span.form-error {
     color: black;
-    font-family: "Arvo", serif;
+    font-family: "Arvo", Georgia, serif;
     position: relative;
     text-shadow: none;
     top: -10px; }
@@ -1024,7 +1024,7 @@ section#tab-about {
       font-size: 30px; } }
 .contact-us-instructions p {
   font-size: 14px;
-  font-family: "Roboto", sans-Serif;
+  font-family: "Roboto", Helvetica, sans-Serif;
   margin: 10px 0 0 0;
   text-align: left; }
   @media (min-width: 1024px) {
@@ -1040,7 +1040,7 @@ section#tab-about {
     text-decoration: none;
     color: #EE8F00; }
   #form-submitted h1 {
-    font-family: "Arvo", serif;
+    font-family: "Arvo", Georgia, serif;
     font-size: 22px;
     margin-bottom: 20px;
     margin-top: 80px; }
@@ -1059,7 +1059,7 @@ section#tab-about {
   -ms-flex-align: center;
   align-items: center; }
   .page-not-found h2 {
-    font-family: "Arvo", serif;
+    font-family: "Arvo", Georgia, serif;
     font-size: 26px;
     color: #303030; }
 
@@ -1092,6 +1092,6 @@ hr {
   color: #EE8F00; }
 
 h1, h2, h3, h4, h5, h6, p, a {
-  font-family: "Roboto", sans-Serif; }
+  font-family: "Roboto", Helvetica, sans-Serif; }
 
 /*# sourceMappingURL=style.css.map */

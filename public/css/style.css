@@ -397,11 +397,11 @@ footer {
   background: rgba(238, 143, 0, 0.8);
   display: block;
   height: auto;
-  padding: 10px;
+  padding: 10px 0;
   position: absolute;
   right: 0;
-  top: 100px;
-  width: 80px;
+  top: 80px;
+  width: 100%;
   z-index: 5; }
   @media (min-width: 768px) {
     .home-slider-overlay {
@@ -415,15 +415,17 @@ footer {
 
 .home-slider-overlay-text {
   color: white;
-  font-size: 8px;
-  line-height: 10px; }
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center; }
   @media (min-width: 768px) {
     .home-slider-overlay-text {
       font-family: "Roboto", Helvetica, sans-Serif;
       font-size: 14px;
       letter-spacing: 1.04px;
       line-height: 20px;
-      opacity: 1; } }
+      opacity: 1;
+      text-align: left; } }
   @media (min-width: 1024px) {
     .home-slider-overlay-text {
       font-size: 16px; } }
@@ -499,7 +501,7 @@ ul.slick-dots {
   .quote-callout h2 {
     color: #fff;
     font-family: "Arvo", Georgia, serif;
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 20px;
     text-align: center; }
   .quote-callout a {
@@ -1005,6 +1007,7 @@ section#tab-about {
   .contact-us-form textarea {
     border: none;
     font-size: 16px;
+    font-family: "Roboto", Helvetica, sans-Serif;
     height: 100px;
     margin-top: 5px;
     padding: 3px;

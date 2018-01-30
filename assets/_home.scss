@@ -85,11 +85,11 @@
     background: rgba(238, 143, 0, 0.8);
     display: block;
     height: auto;
-    padding: 10px;
+    padding: 10px 0;
     position: absolute;
     right: 0;
-    top: 100px;
-    width: 80px;
+    top: 80px;
+    width: 100%;
     z-index: 5;
   @media(min-width:768px){
     padding: 20px;
@@ -104,14 +104,16 @@
 
 .home-slider-overlay-text {
     color: white;
-    font-size: 8px;
-    line-height: 10px;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
   @media(min-width:768px){
     font-family: $secondary-font;
     font-size: 14px;
     letter-spacing: 1.04px;
     line-height: 20px;
     opacity: 1;
+    text-align: left;
   }
   @media(min-width:1024px){
     font-size: 16px;
@@ -200,7 +202,7 @@ ul.slick-dots {
   h2 {
     color: $white;
     font-family: $primary-font;
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 20px;
     text-align: center;
   }

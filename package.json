@@ -15,11 +15,17 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.17.1",
+    "braces": "^3.0.2",
+    "deep-extend": "^0.6.0",
     "dotenv": "^4.0.0",
     "ejs": "^2.5.6",
     "express": "^4.15.2",
+    "forwarded": "^0.1.2",
+    "fresh": "^0.5.2",
+    "mime": "^2.4.4",
     "nodemailer": "^4.0.1",
     "nodemon": "^1.11.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "randomatic": "^3.1.1"
   }
 }
